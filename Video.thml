@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<div><b>Video on the web page </b> <br/> The best solution is to use the HTML5 &lt;video&gt; element + the &lt;embed&gt; element. Because HTML5 doesn't support old browser</div>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br> 
+  <video id="video1" width="420">
+  <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+  <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg">
+  <object data="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" width="320" height="240">
+    <embed width="320" height="240" src="movie.swf">
+  </object>
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+<div><b>Run Youtube video - using Iframe or embed tag</b></div>
+<div>
+<iframe width="420" height="345"
+src="http://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe><br/><br/>
+</div>
+
+<div><b>HTML Video - Using A Hyperlink </b><br/>
+If a web page includes a hyperlink to a media file, most browsers will use a "helper application" to play the file.</div>
+<div><h2>Click the Link to Play the flash file  - this is not an inline video</h2>
+
+<a href="ClearExternalNoVol.swf">Play a video file</a><br/><br/> </div>
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=560; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=320; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=420; 
+} 
+</script> 
+<div>Before HTML5, there was no standard for showing videos/movies on web pages. <br/> Before HTML5, videos could only be played with a plug-in (like flash). However, different browsers supported different plug-ins.</div>
+<div><b>Browser support:</b> <br/>Internet Explorer 9+, Firefox, Opera, Chrome, and Safari support the &lt;video&gt; element. <br/> Note: Internet Explorer 8 and earlier versions, do not support the &lt;video&gt; element</div>
+<div><b>Video Formats and Browser Support </b><br/>
+Currently, there are 3 supported video formats for the &lt;video&gt; element: MP4, WebM, and Ogg:<br/>
+Chrome - support all
+IE, Safari - MP4
+Firefox, Opera - webM & Ogg (Firefox running on win7, 8, vista & Andriod now supports all)
+</div>
+</body> 
+</html>
