@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<form method=post>
+
+<div><b>Datalist element in HTML 5 helps to provide autocomplete feature in a textbox as shown below.</b></div>
+<input list="Country">
+<datalist id="Country">
+<option value="India">
+<option value="Australia">
+<option value="Italy">
+<option value="France">
+<option value="Indonesia">
+<option value="United States">
+</datalist> 
+<br/><br/>
+
+<div><b>color picker dialog box</b></div>
+<input type="color" name="favcolor">  
+<br/><br/>
+
+<div><b>Calender dialog box</b></div>
+<input type="date" name="bday">
+<br/><br/>
+
+<div><b>Calender with local time dialog box</b></div>
+<input type="datetime-local" name="bday">
+<br/><br/>
+
+<div><b>Textbox with email validation - not completely supported by HTML5</b></div>
+<input type="email" name="email" placeholder="Enter your email">
+<input type=text name="pattern-email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="Email required">
+<input type="submit" value="Submit">
+<br/><br/>
+
+<div><b>Textbox with number range</b></div>
+<input type="number" name="quantity" min="1" max="5">  
+<br/><br/>
+
+<div><b>range control</b></div>
+<input type="range" min="0" max="10" step="2" value="6"> 
+<br/><br/>
+
+<div><b>Google search box</b></div>
+<input type="search" name="googleengine">  
+
+<input type="time" name="usr_time">  
+<input type="tel" name="mytel">  
+
+</form>
+<form onsubmit="return false"  öninput="o.value = parseInt(a.value) + parseInt(b.value)">
+<input name="a" type="number"> +
+<input name="b" type="number"> =
+<output name="o" />
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
